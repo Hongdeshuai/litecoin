@@ -6,7 +6,7 @@ define(_CLIENT_VERSION_REVISION, 1)
 define(_CLIENT_VERSION_BUILD, 0)
 define(_CLIENT_VERSION_RC, 0)
 define(_CLIENT_VERSION_IS_RELEASE, true)
-define(_COPYRIGHT_YEAR, 2020)
+define(_COPYRIGHT_YEAR, 2022)
 define(_COPYRIGHT_HOLDERS,[The %s developers])
 define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[Litecoin Core]])
 AC_INIT([Litecoin Core],m4_join([.], _CLIENT_VERSION_MAJOR, _CLIENT_VERSION_MINOR, _CLIENT_VERSION_REVISION, m4_if(_CLIENT_VERSION_BUILD, [0], [], _CLIENT_VERSION_BUILD))m4_if(_CLIENT_VERSION_RC, [0], [], [rc]_CLIENT_VERSION_RC),[https://github.com/litecoin-project/litecoin/issues],[litecoin],[https://litecoin.org/])
@@ -15,11 +15,11 @@ AC_CONFIG_HEADERS([src/config/bitcoin-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([build-aux/m4])
 
-BITCOIN_DAEMON_NAME=litecoind
-BITCOIN_GUI_NAME=litecoin-qt
-BITCOIN_CLI_NAME=litecoin-cli
-BITCOIN_TX_NAME=litecoin-tx
-BITCOIN_WALLET_TOOL_NAME=litecoin-wallet
+BITCOIN_DAEMON_NAME=nerucoind
+BITCOIN_GUI_NAME=nerucoin-qt
+BITCOIN_CLI_NAME=nerucoin-cli
+BITCOIN_TX_NAME=nerucoin-tx
+BITCOIN_WALLET_TOOL_NAME=nerucoin-wallet
 
 dnl Unless the user specified ARFLAGS, force it to be cr
 AC_ARG_VAR(ARFLAGS, [Flags for the archiver, defaults to <cr> if not set])
