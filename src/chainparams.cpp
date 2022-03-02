@@ -121,7 +121,7 @@ public:
         // service bits we want, but we should get them updated to support all service bits wanted by any
         // release ASAP to avoid it where possible.
         vSeeds.emplace_back("20.127.200.214");
-        // vSeeds.emplace_back("dnsseed.thrasher.io");
+        vSeeds.emplace_back("13.90.56.45");
         // vSeeds.emplace_back("dnsseed.litecointools.com");
         // vSeeds.emplace_back("dnsseed.litecoinpool.org");
 
